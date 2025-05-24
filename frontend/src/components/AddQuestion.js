@@ -18,7 +18,7 @@ function AddQuestion(){
 
     const handleSubmit = e => {
         e.preventDefault();
-        API.post('/questions'.formData)
+        API.post('/questions',formData)
             .then(res => alert('Question added!'))
             .catch(err => console.log(err));
     };

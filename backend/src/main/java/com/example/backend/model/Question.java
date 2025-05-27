@@ -24,10 +24,12 @@ public class Question {
     private String optionD;
     private String correctOption;
 
+    private String testModule;
+
     public Question() {
     }
 
-    public Question(Long id, String questionText, String optionA, String optionB, String optionC, String optionD, String correctOption) {
+    public Question(Long id, String questionText, String optionA, String optionB, String optionC, String optionD, String correctOption , String testModule) {
         this.id = id;
         this.questionText = questionText;
         this.optionA = optionA;
@@ -35,6 +37,7 @@ public class Question {
         this.optionC = optionC;
         this.optionD = optionD;
         this.correctOption = correctOption;
+        this.testModule = testModule;
     }
 
     // Getters and Setters
@@ -94,4 +97,13 @@ public class Question {
     public void setCorrectOption(String correctOption) {
         this.correctOption = correctOption;
     }
+
+    public String gettestmodule() {
+        return testModule;
+    }
+
+    public void setTestModule(String testModule) {
+        this.testModule = testModule;
+    }
+
 }

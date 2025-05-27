@@ -49,4 +49,9 @@ public class QuizController {
         public List<Result> getResults(){
             return resultRepo.findAll();
     }
+
+    @GetMapping("/questions/{module}")
+    public List<Question> getQuestionsByModule(@PathVariable String module) {
+        return questionRepo.findByTestModule(module);
+    }
 }
